@@ -152,9 +152,10 @@ body {
 
 .card .info p{
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 10px;
     margin-bottom: 23px;
+    margin: 15px; //should just do the sides(???)
 
 }
 
@@ -210,6 +211,7 @@ h1{
 
 p{
     color: var(--color-text);
+    text-shadow: var(--bsh);
 }
 
 
