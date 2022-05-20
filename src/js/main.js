@@ -10,6 +10,14 @@
  */
 
 
+$(document).ready(function(){ // hovering
+    $("#myProjects").hover(function(){
+        $(this).css("color", "lightblue");
+    },
+    function(){
+        $(this).css('color', '');// stops hoving
+    });
+})
 
 
 
