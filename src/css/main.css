@@ -8,7 +8,7 @@ html {
   --color-text: #1b1b1b;
 }
 
-html[data-theme='dark'] {
+html[data-theme=dark] {
   height: 100%;
   width: 100%;
   --bsh: rgba(43, 42, 42, 0.5);
@@ -25,12 +25,8 @@ body {
 }
 
 .toggle-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-right: 2em;
 }
 
@@ -45,31 +41,18 @@ body {
 }
 
 .wrapper-big {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 60%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .card {
@@ -77,21 +60,14 @@ body {
   height: 360px;
   background: var(--bg-panel);
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-shadow: 0px 7px 10px var(--bsh);
-          box-shadow: 0px 7px 10px var(--bsh);
-  -webkit-transition: 0.5s ease-in-out;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px var(--bsh);
   transition: 0.5s ease-in-out;
 }
 
 .card:hover {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .card img {
@@ -119,10 +95,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 176, 155, 0.5)), to(#96c93d));
-  background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), #96c93d);
+  background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgb(150, 201, 61));
   z-index: 2;
-  -webkit-transition: 0.5s all;
   transition: 0.5s all;
   opacity: 0;
 }
@@ -136,16 +110,13 @@ body {
   z-index: 3;
   color: #fff;
   opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  -webkit-transition: 0.5s all;
+  transform: translateY(30px);
   transition: 0.5s all;
 }
 
 .card:hover .info {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .card .info p {
@@ -163,13 +134,10 @@ body {
   width: fit-content;
 }
 
-.btnHolderMain {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.card .btnHolderMain {
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 50%;
+  position: relative;
+  justify-content: space-around;
 }
 
 .btnMain {
@@ -180,7 +148,6 @@ body {
   font-size: 10px;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   position: relative;
   width: 90px;
@@ -197,8 +164,7 @@ body {
 }
 
 .card .info .btnMain:hover {
-  -webkit-box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -228,7 +194,7 @@ label {
 }
 
 label:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 3px;
   left: 3px;
@@ -236,7 +202,6 @@ label:after {
   height: 20px;
   background: #fff;
   border-radius: 90px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -246,8 +211,7 @@ input:checked + label {
 
 input:checked + label:after {
   left: calc(100% - 5px);
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 label:active:after {
@@ -258,9 +222,6 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  -webkit-transition: all 750ms !important;
   transition: all 750ms !important;
-  -webkit-transition-delay: 0 !important;
-          transition-delay: 0 !important;
-}
-/*# sourceMappingURL=main.css.map */
+  transition-delay: 0 !important;
+}/*# sourceMappingURL=main.css.map */
